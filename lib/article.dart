@@ -20,6 +20,7 @@ class Article {
   @override
   String toString() => 'Article(title: $title, content: $content)';
 
+  //overriding equality operator to ensure Article can be compare by value and not be reference
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
